@@ -1,0 +1,6 @@
+ultralytics==8.0.200
+opencv-python
+python-dotenv
+Pillow
+google-generativeai
+

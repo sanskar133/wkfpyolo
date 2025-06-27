@@ -1,0 +1,5 @@
+path : /home/sanskar/wk2projectfinal/dataset
+train : /home/sanskar/wk2projectfinal/dataset/images/train
+val : /home/sanskar/wk2projectfinal/dataset/images/test
+nc: 6
+names : ['missing_hole','mouse_bite','open_circuit','short','spur','spurious_cooper']
