@@ -29,7 +29,7 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Step 3: Get class names (folder names as labels)
-label_list = os.listdir('/home/sanskar/wk2projectfinal/image')
+label_list = os.listdir("/image")
 
 # Step 4: Inference Function
 def inference(yolo_model_path, img_src, out_path):
@@ -62,10 +62,10 @@ def inference(yolo_model_path, img_src, out_path):
     return None, None, None, None  # if no boxes
 
 # Step 5: Input paths
-yolo_model_path = "/home/sanskar/wk2projectfinal/runs/detect/train11/weights/best.pt"
-img_src = "/home/sanskar/wk2projectfinal/image/Spurious_copper/12_spurious_copper_08.jpg" 
+yolo_model_path = "model/yolov8s.pt"
+img_src = "/image/Spurious_copper/12_spurious_copper_08.jpg" 
 
-out_path = "/home/sanskar/wk2projectfinal/out3"
+out_path = "out3"
 os.makedirs(out_path, exist_ok=True)
 
 # Step 6: Run inference
